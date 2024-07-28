@@ -214,6 +214,72 @@ html {
 .slideInRight {
   animation: slideInRight 1s ease-out; }
 
+.home__ourClients {
+  margin-block: 120px;
+  text-align: center;
+  position: relative;
+  overflow: hidden; }
+  .home__ourClients__par {
+    color: #B2941C;
+    font-family: "Tajawal", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400; }
+    @media (max-width: 991px) {
+      .home__ourClients__par {
+        padding-block: 50px; } }
+  .home__ourClients__case {
+    color: white;
+    font-family: "Tajawal", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 30px auto; }
+
+#dragger,
+#ring,
+.carousel .img,
+.vignette {
+  inset: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  user-select: none;
+  position: absolute; }
+
+.carousel .img {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  left: 0; }
+
+.carousel {
+  perspective: 900px;
+  width: 300px;
+  height: 300px;
+  right: 0%;
+  top: 5%;
+  transform: translateX(175%); }
+  @media (max-width: 991px) {
+    .carousel {
+      width: 220px;
+      height: 220px; } }
+  @media (max-width: 768px) {
+    .carousel {
+      width: 200px;
+      height: 200px; } }
+
+.vignette {
+  width: 1400px;
+  top: 25%;
+  height: 300px; }
+
+#dragger {
+  top: 30%;
+  height: 250px; }
+
 #header {
   width: 100%;
   position: fixed;
