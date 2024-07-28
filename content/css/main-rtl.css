@@ -763,4 +763,155 @@ footer {
       object-fit: contain;
       border-radius: 50px; }
 
+.about-hero {
+  height: calc(100vh - 80px);
+  position: relative; }
+  @media (max-width: 991px) {
+    .about-hero {
+      height: calc(70vh - 80px); } }
+  .about-hero .image {
+    width: 100%;
+    height: 100%; }
+    .about-hero .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.7); }
+  .about-hero .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 800px;
+    padding: 40px;
+    text-align: center; }
+    @media (max-width: 991px) {
+      .about-hero .content {
+        width: 100%;
+        padding: 20px;
+        max-width: 100%; } }
+    .about-hero .content h1 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: white; }
+    .about-hero .content p {
+      font-size: 24px;
+      line-height: 1.5;
+      color: white; }
+.about-who {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 120px; }
+  @media (max-width: 991px) {
+    .about-who {
+      flex-direction: column-reverse;
+      gap: 40px;
+      margin-block: 60px; } }
+  .about-who .content {
+    width: 50%; }
+    @media (max-width: 991px) {
+      .about-who .content {
+        width: 100%; } }
+    .about-who .content h2 {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      color: #1E1E1E; }
+      @media (max-width: 991px) {
+        .about-who .content h2 {
+          font-size: 24px; } }
+    .about-who .content p {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: rgba(30, 30, 30, 0.8); }
+      @media (max-width: 991px) {
+        .about-who .content p {
+          font-size: 18px; } }
+  .about-who .image {
+    width: 40%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px; }
+    @media (max-width: 991px) {
+      .about-who .image {
+        width: 100%; } }
+    .about-who .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px; }
+.about-vision {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .about-vision .box {
+    padding-block: 32px 87px;
+    padding-inline: 32px;
+    border-radius: 32px;
+    color: white; }
+    .about-vision .box:nth-child(1) {
+      width: 100%;
+      background-color: #6B5911; }
+    .about-vision .box:nth-child(2) {
+      width: 75%;
+      margin-top: -50px;
+      background-color: #8E7616; }
+      @media (max-width: 991px) {
+        .about-vision .box:nth-child(2) {
+          width: 100%; } }
+    .about-vision .box:nth-child(3) {
+      width: 50%;
+      margin-top: -50px;
+      background-color: #B2941C; }
+      @media (max-width: 991px) {
+        .about-vision .box:nth-child(3) {
+          width: 100%; } }
+    .about-vision .box h2 {
+      font-family: Ubuntu;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal; }
+      @media (max-width: 991px) {
+        .about-vision .box h2 {
+          font-size: 24px;
+          width: 100%; } }
+    .about-vision .box p {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      width: 90%; }
+      @media (max-width: 991px) {
+        .about-vision .box p {
+          font-size: 18px;
+          width: 100%; } }
+.about-locations {
+  margin-block: 120px; }
+  @media (max-width: 991px) {
+    .about-locations {
+      margin-block: 60px; } }
+  .about-locations h2 {
+    margin-bottom: 50px; }
+    .about-locations h2 span {
+      color: #B2941C; }
+  .about-locations .box {
+    padding: 16px;
+    border-radius: 32px;
+    border: 1px solid var(--Secondary-color-1, #212121); }
+    .about-locations .box a {
+      display: flex;
+      gap: 12px;
+      margin-block: 20px;
+      color: #212121;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700; }
+
 /*# sourceMappingURL=main-rtl.css.map */

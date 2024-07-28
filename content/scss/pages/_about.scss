@@ -1,0 +1,220 @@
+.about {
+    &-hero {
+        height: calc(100vh - 80px);
+
+        @include responsive (max, 991px) {
+            height: calc(70vh - 80px);
+
+        }
+
+        position: relative;
+
+        .image {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(.7);
+
+            }
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            max-width: 800px;
+            padding: 40px;
+
+            text-align: center;
+
+            @include responsive (max, 991px) {
+                width: 100%;
+                padding: 20px;
+                max-width: 100%;
+
+            }
+
+            h1 {
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 1.2;
+                color: white;
+            }
+
+            p {
+                font-size: 24px;
+                line-height: 1.5;
+                color: white;
+            }
+        }
+    }
+
+    &-who {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-block: 120px;
+
+        @include responsive (max, 991px) {
+            flex-direction: column-reverse;
+            gap: 40px;
+            margin-block: 60px;
+
+        }
+
+        .content {
+            width: 50%;
+
+            @include responsive (max, 991px) {
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color: #1E1E1E;
+
+                @include responsive (max, 991px) {
+                    font-size: 24px;
+                }
+            }
+
+            p {
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: rgba(30, 30, 30, 0.80);
+
+                @include responsive (max, 991px) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .image {
+            width: 40%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 16px;
+
+            @include responsive (max, 991px) {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 16px;
+            }
+        }
+    }
+
+    &-vision {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .box {
+            padding-block: 32px 87px;
+            padding-inline: 32px;
+            border-radius: 32px;
+            color: white;
+
+            &:nth-child(1) {
+                width: 100%;
+                // z-index: 0;
+                background-color: #6B5911;
+
+            }
+
+            &:nth-child(2) {
+                width: 75%;
+                margin-top: -50px;
+                background-color: #8E7616;
+
+                @include responsive (max, 991px) {
+                    width: 100%;
+                }
+            }
+
+            &:nth-child(3) {
+                width: 50%;
+                margin-top: -50px;
+                background-color: #B2941C;
+
+                @include responsive (max, 991px) {
+                    width: 100%;
+                }
+            }
+
+            h2 {
+                font-family: Ubuntu;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+
+                @include responsive (max, 991px) {
+                    font-size: 24px;
+                    width: 100%;
+
+                }
+            }
+
+            p {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                width: 90%;
+
+                @include responsive (max, 991px) {
+                    font-size: 18px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &-locations {
+        margin-block: 120px;
+
+        @include responsive (max, 991px) {
+            margin-block: 60px;
+        }
+
+        h2 {
+            span {
+                color: $color-primary;
+            }
+
+            margin-bottom: 50px;
+        }
+
+        .box {
+            padding: 16px;
+            border-radius: 32px;
+            border: 1px solid var(--Secondary-color-1, #212121);
+
+            a {
+                display: flex;
+                gap: 12px;
+                margin-block: 20px;
+                color: #212121;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+            }
+        }
+    }
+}
