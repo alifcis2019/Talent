@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./content/images/logo.svg">
+    <title>Talent</title>
+    <!-- Global bootstrap CDN V5.3.2 for ltr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+        integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+        crossorigin="anonymous" />
+    <!-- Global Font Awesome CDN V6.4.2  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" />
+    <!-- Additional aos CDN V2.3.1  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide-core.min.css"
+        integrity="sha512-cSogJ0h5p3lhb//GYQRKsQAiwRku2tKOw/Rgvba47vg0+iOFrQ94iQbmAvRPF5+qkF8+gT7XBct233jFg1cBaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="
+        https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css
+        " rel="stylesheet">
+    <!-- Global main css file for ltr  -->
+    <link rel="stylesheet" href="./content/css/main-ltr.css">
+</head>
+
+<body>
+    <!-- start navbar -->
+    <header id="header">
+        <div class="navsbar">
+            <div class="navsbar__logo">
+                <a href="index.html" class="d-flex">
+                    <img src="./content/images/logo.svg" alt="Unlimited logo"> </a>
+            </div>
+            <ul class="navsbar__list">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html"> Contact Us</a></li>
+            </ul>
+            <button class="navsbar__hamborg-tab navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="fa-solid fa-bars fs-1"></i>
+            </button>
+    </header>
+    <!-- end navbar -->
+
+    <!-- navbar mobile -->
+    <div class="offcanvas navsbar__mobile offcanvas-top" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header ms-auto me-0 pb-0">
+            <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-xmark fs-1 text-white"></i>
+            </button>
+
+        </div>
+        <div class="offcanvas-body p-0">
+            <ul class="navsbar__mobile__list justify-content-end ">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end navbar mobile -->
+
+    <main>
+        <!-- start hero -->
+        <section class="">
+            <div class="talent-container talent-hero home-hero">
+                <div class="home-hero__left">
+                    <div class="content">
+                        <h1 class="header">Connecting Students with Expert Mentors With <br> <span>Talent Center</span>
+                        </h1>
+                        <p class="desc">Unlocking Potential Through Personalized Learning</p>
+                    </div>
+                    <a href="./contact.html" class="position-absolute global-btn wow animate__animated slideInLeft "
+                        data-wow-offset="10" data-wow-duration="1s">
+                        Contact Us
+                    </a>
+                </div>
+                <div class="home-hero__right wow">
+                    <img src="./content/images/home/hero-man.png" alt="">
+                    <div class="small-images">
+                        <img class="wow animate__animated slideInTop" src="./content/images/home/home-shpe-1.svg"
+                            alt="">
+                        <img class="wow animate__animated slideInTop" class="wow slideInLeft" data-wow-offset="10"
+                            data-wow-iteration="1s" src="./content/images/home/home-shpe-2.svg" alt="">
+                        <img class="wow animate__animated slideInLeft" src="./content/images/home/home-shpe-3.svg"
+                            alt="">
+                        <img class="wow animate__animated slideInRight" src="./content/images/home/home-shpe-4.svg"
+                            alt="">
+                        <img class="wow animate__animated slideInBottom" src="./content/images/home/home-shpe-5.svg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start who we are -->
+        <section>
+            <div class="talent-container home-who">
+                <div class="home-who__video">
+                    <img src="./content/images/home/who.png" alt="who we are">
+                </div>
+                <div class="home-who__content">
+                    <h2 class="header">
+                        Who We Are?
+                    </h2>
+                    <p class="desc">
+                        We nurture students by providing comprehensive education, utilizing cutting-edge teaching
+                        techniques, and creating a nurturing environment ignite creativity, achieve academic excellence,
+                        and encourage lifelong learning, all while upholding values of honesty, respect, excellence, and
+                        teamwork. See More
+                    </p>
+                    <a href="./about.html" class="global-btn">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- welcome talent center -->
+        <section>
+            <div class="talent-container home-center">
+                <div class="home-center__head">
+                    <h2 class="header">Welcome to <span>Talent Center</span></h2>
+                    <p class="desc">
+                        At Talent Education Center, we are dedicated to providing personalized, high-quality education
+                        tailored to meet the unique needs of each student. Our center offers private lessons across a
+                        wide range of subjects, delivered by experienced and passionate teachers.
+                    </p>
+                </div>
+                <div class="home-center__content row row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+                    <div class="col" data-aos="fade-up" data-aos-duration="500">
+                        <div class="card  d-flex flex-column align-items-start justify-content-between">
+                            <img src="./content/images/home/center1.svg" alt="">
+                            <h3>Our Teachers</h3>
+                            <p>Our expert educators are committed to helping students achieve their goals and provide
+                                continuous support.</p>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card  d-flex flex-column align-items-start justify-content-between">
+                            <img src="./content/images/home/center2.svg" alt="">
+                            <h3>Our Approach</h3>
+                            <p>We offer customized lessons tailored to each student's needs, ensuring effective and
+                                enjoyable learning.</p>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="card  d-flex flex-column align-items-start justify-content-between">
+                            <img src="./content/images/home/center3.svg" alt="">
+                            <h3>Our Mission</h3>
+                            <p>To empower students with knowledge, skills, and confidence in a supportive, engaging
+                                environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- why choose us  -->
+        <section>
+            <div class="talent-container home-choose">
+                <div class="home-choose__content">
+                    <h2 class="header">
+                        Why Choose <span>Us</span>?
+                    </h2>
+                    <ul>
+                        <li>
+                            Personalized Attention: <span>Small classes.</span>
+                        </li>
+                        <li>
+                            Flexible Scheduling: <span>Various options to fit busy lifestyles.</span>
+                        </li>
+                        <li>
+                            Comprehensive Curriculum: <span>Subjects from Math to Arts.</span>
+                        </li>
+                        <li>
+                            Supportive Community: <span>Encourages questions. </span>
+                        </li>
+                        <li>
+                            Proven Results: <span>Excellent academic outcomes. </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="home-choose__images">
+                    <div class="one">
+                        <img src="./content/images/home/why1.png" alt="">
+                    </div>
+                    <div class="two">
+                        <img src="./content/images/home/why2.png" alt="">
+                        <img src="./content/images/home/why3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start carousel -->
+        <section>
+            <div class="splide is-team my-4" id="gallery-section">
+                <div class="splide__track is-team">
+                    <div class="splide__list is-team">
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel1.png" alt="">
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel1.png" alt="">
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel1.png" alt="">
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel1.png" alt="">
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel2.png" alt="">
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel2.png" alt="">
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel2.png" alt="">
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel2.png" alt="">
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel3.png" alt="">
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel3.png" alt="">
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel3.png" alt="">
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel3.png" alt="">
+
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel4.png" alt="">
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel4.png" alt="">
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel4.png" alt="">
+                        </div>
+                        <div class="splide__slide is-team"><img src="./content/images/home/carousel4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start get in touch -->
+        <section>
+            <div class="talent-container">
+                <div class=" home-touch" style="background-image: url(./content/images/home/touch.png);">
+                    <div class="home-touch__content">
+                        <div class="home-touch__content__header">
+                            <h2>Get in <span>Touch</span> Today</h2>
+                            <p>We're Here to Help</p>
+                        </div>
+                        <div class="home-touch__form">
+                            <form action="">
+                                <input type="email" id="mail">
+                                <input type="submit" class="global-btn send-btn" value="Send">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="./content/images/home/touch-man.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- start footer -->
+    <footer>
+        <div class="footer row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4">
+            <div class="footer__logo col">
+                <div class="footer__logo__image">
+                    <img src="./content/images/logo.svg" alt="">
+                </div>
+                <h2 class="footer__logo__header">
+                    Education is your compass, guiding you towards a world of endless possibilities and growth. Embrace
+                    it with curiosity, and let it fuel your dreams!
+                </h2>
+            </div>
+            <div class="footer__links col">
+                <h2>
+                    Quick links
+                </h2>
+                <ul>
+                    <li>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="">Term & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="">Support</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__pages col">
+                <h2>
+                    Quick Pages
+                </h2>
+                <ul>
+                    <li>
+                        <a href="">Home Page</a>
+                    </li>
+                    <li>
+                        <a href="">About US</a>
+                    </li>
+                    <li>
+                        <a href="">Contact US</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contact col">
+                <h2>
+                    Contacts
+                </h2>
+                <ul>
+                    <li>
+                        <a href="tel:+555-0120">
+                            <img src="./content/images/home/phone.svg" alt="">
+                            <span>
+                                (406) 555-0120
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mangcoding123@gmail.com">
+                            <img src="./content/images/home/mail.svg" alt="">
+                            <span>
+                                mangcoding123@gmail.com
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=1600+Amphitheatre+Parkway,+Mountain+View,+CA">
+                            <img src="./content/images/home/map.svg" alt="">
+                            <span>
+                                2972 Westheimer Rd. Santa Ana, Illinois 85486
+                            </span>
+                        </a>>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__social col">
+                <h2>
+                    Social media
+                </h2>
+                <div class="images">
+                    <a href="">
+                        <img src="./content/images/home/facebook.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./content/images/home/twitter.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./content/images/home/linkedin.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./content/images/home/instagram.svg" alt="">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- preloader -->
+    <div id="preloader">
+        <span class="loader"></span>
+    </div>
+</body>
+
+<!-- Global jquery CDN V3.7.1  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"></script>
+<!-- Global Bootstrap CDN V5.3.2  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+    integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+    crossorigin="anonymous"></script>
+<!-- Global Font Awesome CDN V6.5.1 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+    integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Additional aos CDN V2.3.1  -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Splide JS import -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<!-- Splide JS Autoscroll extension -->
+<script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+<script src="
+    https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js
+    "></script>
+<script>
+    wow = new WOW(
+        {
+            boxClass: 'wow',      // default
+            animateClass: 'animated', // default
+            offset: 50,          // default
+            mobile: true,       // default
+            live: true        // default
+        }
+    )
+    wow.init();
+</script>
+<script src="./content/js/general.js"></script>
+<script src="./content/js/splide.js"></script>
+
+</html>

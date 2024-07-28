@@ -1,0 +1,77 @@
+footer {
+    padding: 48px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 57px;
+    background-color: #212121;
+
+    @include responsive (max, 991px) {
+        padding: 20px 40px;
+    }
+
+    .footer {
+        &__logo {
+            &__image {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 16px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &__header {
+                color: white;
+                font-family: Ubuntu;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                width: 80%;
+            }
+        }
+
+        &__links,
+        &__pages,
+        &__contact,
+        &__contact,
+        &__social {
+            h2 {
+                color: white;
+                margin-bottom: 40px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            ul {
+                li {
+                    margin-block: 16px;
+
+                    a {
+                        color: white;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        display: flex;
+                        align-items: center;
+                        gap: 24px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &__social {
+            .images {
+                display: flex;
+                gap: 27px;
+            }
+        }
+    }
+}
