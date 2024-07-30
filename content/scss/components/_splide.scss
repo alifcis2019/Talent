@@ -1,5 +1,15 @@
 .splide__slide.is-team {
     width: calc(100% / 3);
+
+    @include responsive (max, 991px) {
+        width: calc(100% / 2);
+
+    }
+
+    @include responsive (max, 768px) {
+        width: calc(100% / 1.2);
+
+    }
 }
 
 .splide__slide.is-team img {

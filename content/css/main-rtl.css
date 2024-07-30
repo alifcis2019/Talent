@@ -141,6 +141,12 @@ main .talent-hero {
 
 .splide__slide.is-team {
   width: calc(100% / 3); }
+  @media (max-width: 991px) {
+    .splide__slide.is-team {
+      width: calc(100% / 2); } }
+  @media (max-width: 768px) {
+    .splide__slide.is-team {
+      width: calc(100% / 1.2); } }
 
 .splide__slide.is-team img {
   height: 400px;
