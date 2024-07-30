@@ -1,5 +1,10 @@
+.splide__slide.is-team {
+    width: calc(100% / 3);
+}
+
 .splide__slide.is-team img {
     height: 400px;
+    width: 100%;
 }
 
 .vertical-slide {

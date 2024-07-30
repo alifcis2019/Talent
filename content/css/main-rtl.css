@@ -135,9 +135,16 @@ main .talent-hero {
   border-radius: 8px;
   padding: 16px;
   background-color: #B2941C; }
+  @media (max-width: 991px) {
+    .global-btn {
+      padding: 8px; } }
+
+.splide__slide.is-team {
+  width: calc(100% / 3); }
 
 .splide__slide.is-team img {
-  height: 400px; }
+  height: 400px;
+  width: 100%; }
 
 .vertical-slide {
   padding-block: 40px !important; }

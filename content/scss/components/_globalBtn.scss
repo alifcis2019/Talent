@@ -5,4 +5,7 @@
     border-radius: 8px;
     padding: 16px;
     background-color: $color-primary;
+    @include responsive (max,991px) {
+        padding: 8px;
+    }
 }
