@@ -139,7 +139,7 @@ main .talent-hero {
       padding: 8px; } }
 
 .splide__slide.is-team {
-  width: calc(100% / 3); }
+  width: calc(100% /4 ); }
   @media (max-width: 991px) {
     .splide__slide.is-team {
       width: calc(100% / 2); } }
@@ -148,7 +148,7 @@ main .talent-hero {
       width: calc(100% / 1.2); } }
 
 .splide__slide.is-team img {
-  height: 400px;
+  height: 350px;
   width: 100%; }
 
 .vertical-slide {
@@ -567,29 +567,32 @@ footer {
   .home-hero__right {
     position: absolute;
     bottom: 0;
-    right: 10%; }
+    right: 10%;
+    z-index: 2; }
     .home-hero__right img {
-      width: 100%;
-      height: calc(100vh - 120px); }
+      width: 420px;
+      height: calc(100vh - 120px);
+      z-index: inherit; }
     .home-hero__right .small-images img {
       width: 88px;
       height: 88px;
-      position: absolute; }
+      position: absolute;
+      z-index: 1; }
       .home-hero__right .small-images img:nth-child(1) {
-        top: 0;
-        left: -15%; }
+        top: 5%;
+        left: -10%; }
       .home-hero__right .small-images img:nth-child(2) {
-        top: 0;
-        right: 0%; }
+        top: 5%;
+        right: 15%; }
       .home-hero__right .small-images img:nth-child(3) {
         top: 40%;
-        left: -30%; }
+        left: -15%; }
       .home-hero__right .small-images img:nth-child(4) {
-        top: 40%;
-        right: -30%; }
+        top: 60%;
+        right: -10%; }
       .home-hero__right .small-images img:nth-child(5) {
         top: 75%;
-        left: -30%; }
+        left: -20%; }
     @media (max-width: 991px) {
       .home-hero__right {
         display: none; } }
@@ -696,7 +699,7 @@ footer {
       flex-direction: column;
       gap: 30px; } }
   .home-choose__content {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -712,10 +715,13 @@ footer {
         color: #B2941C; }
     .home-choose__content ul {
       list-style-type: disc;
-      padding-left: 20px; }
+      padding-left: 20px;
+      width: 100%; }
       .home-choose__content ul li {
         margin-block: 24px;
-        color: #000000; }
+        color: #000000;
+        font-size: 18px;
+        font-weight: 500; }
         .home-choose__content ul li span {
           color: rgba(30, 30, 30, 0.5); }
   .home-choose__images {

@@ -1,5 +1,5 @@
 .splide__slide.is-team {
-    width: calc(100% / 3);
+    width: calc(100% /4 );
 
     @include responsive (max, 991px) {
         width: calc(100% / 2);
@@ -13,7 +13,7 @@
 }
 
 .splide__slide.is-team img {
-    height: 400px;
+    height: 350px;
     width: 100%;
 }
 

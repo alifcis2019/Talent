@@ -11,7 +11,7 @@ function splideTeam() {
             pagination: false,
             drag: false,
             autoScroll: {
-                speed: 1,
+                speed: .7,
                 pauseOnHover: false // Disable pausing on hover
             }
         }).mount(window.splide.Extensions);
